@@ -1,9 +1,35 @@
 import './App.css';
+import Button from './components/Button';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <div className="calc-wrapper">
+        <div className="row">
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </div>
+        <div className="row">
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </div>  
+        <div className="row">
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </div>  
+        <div className="row">
+          <Button />
+          <Button />
+          <Button />
+          <Button />
+        </div>     
+      </div>
     </div>
   );
 }
