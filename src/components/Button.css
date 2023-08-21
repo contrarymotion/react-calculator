@@ -1,5 +1,6 @@
 .button-wrapper {
   height: 4em;
+  width: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +10,6 @@
   flex-direction: 1;
 
   margin: 4px;
-  border-radius: 4px;
+  border-: 4px;
 
 }

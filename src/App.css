@@ -11,7 +11,7 @@ body {
 .calc-wrapper {
   background-color: white;
   width: 400px;
-  border-radius: 16px;
+  /* border-radius: 16px; */
 }
 
 .row {

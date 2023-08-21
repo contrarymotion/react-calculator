@@ -1,7 +1,7 @@
-import "./Button.css"
+import "./Button.css";
 
-const Button = () => {
-  return <div className="button-wrapper">TEST</div>;
+const Button = ({ symbol }) => {
+  return <div className="button-wrapper">{symbol}</div>;
   };
 
   export default Button;
