@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { evaluate } from 'mathjs';
-
+import * as math from 'mathjs';
 import './App.css';
 import Button from './components/Button';
 import Input from './components/Input';
@@ -15,6 +14,12 @@ const App = () => {
     setText((text) => [...text, val + " "]);
   }
 
+  const calculateResult = () => {
+    const input = text.join('') //Remove commas
+
+    setResult(math.evalute(input));
+  }
+
     // Function to reset input and result
   const resetInput = () => {
     setText("")
@@ -25,6 +30,7 @@ const App = () => {
   // Color for arithmetic operator buttons
   const buttonColor = "#f2a33c";
 
+  //Calculator interface layout
   return (
     <div className="App">
       <div className="calc-wrapper">
@@ -50,9 +56,11 @@ const App = () => {
         <div className="row">
           <Button symbol="0" handleClick={addToText}/>
           <Button symbol="." handleClick={addToText}/>
-          <Button symbol="=" handleClick={addToText}/>
+          <Button symbol="=" handleClick={calculateResult}/>
           <Button symbol="-" color={buttonColor} handleClick={addToText}/>
-        </div> 
+        </div>
+
+        //Clears input box 
         <Button symbol="Clear" color="red" handleClick={resetInput}/>   
       </div>
     </div>
