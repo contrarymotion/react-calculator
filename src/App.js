@@ -3,6 +3,8 @@ import Button from './components/Button';
 import Input from './components/Input';
 
 const App = () => {
+  const buttonColor = "#f2a33c";
+
   return (
     <div className="App">
       <div className="calc-wrapper">
@@ -11,7 +13,7 @@ const App = () => {
           <Button symbol="7"/>
           <Button symbol="8"/>
           <Button symbol="9"/>
-          <Button symbol="/"/>
+          <Button symbol="/" color={buttonColor}/>
         </div>
         <div className="row">
           <Button symbol="4"/>
