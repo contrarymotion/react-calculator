@@ -1,24 +1,28 @@
 import { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 import './App.css';
 import Button from './components/Button';
 import Input from './components/Input';
 
 const App = () => {
-
+  // State variables to hold the input text and calculation result
   const [text, setText] = useState("");
   const [result, setResult] = useState("");
 
+  // Function to add values to the input text
   const addToText = (val) => {
     setText((text) => [...text, val + " "]);
   }
 
+    // Function to reset input and result
   const resetInput = () => {
     setText("")
     setResult("")
   }
 
 
+  // Color for arithmetic operator buttons
   const buttonColor = "#f2a33c";
 
   return (

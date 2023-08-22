@@ -1,13 +1,19 @@
+/* Styles for the button-wrapper element */
+
+/* Define the size and alignment of the button */
 .button-wrapper {
-  height: 4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  background-color: #5a5a5a;
-  color: white;
-  flex: 1;
-  margin: 4px;
-  border: 25px;
-  border-radius: 20px;
+  height: 4em; /* Set the height of the button */
+  display: flex; /* Display as a flex container */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  font-size: 24px; /* Set font size for the button text */
+  
+  /* Background and text color */
+  background-color: #5a5a5a; /* Set background color of the button */
+  color: white; /* Set text color to white */
+  
+  flex: 1; /* Take up available space within the parent container */
+  margin: 4px; /* Add margin around the button */
+  border: 25px; /* Border (not specifying style) */
+  border-radius: 20px; /* Apply rounded corners */
 }

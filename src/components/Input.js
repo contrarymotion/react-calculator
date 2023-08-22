@@ -1,5 +1,6 @@
 import "./Input.css";
 
+// This component displays provided text and result values within styled div elements.
 const Input = ({ text, result }) => {
   return <div className="input-wrapper">
       <div className="result">
