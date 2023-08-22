@@ -15,22 +15,21 @@ const App = () => {
   }
 
   const calculateResult = () => {
-    const input = text.join('') //Remove commas
+    const input = text.join(''); //Remove commas
 
-    setResult(math.evalute(input));
+    setResult(math.evaluate(input));
   }
 
     // Function to reset input and result
   const resetInput = () => {
-    setText("")
-    setResult("")
+    setText("");
+    setResult("");
   }
 
 
   // Color for arithmetic operator buttons
   const buttonColor = "#f2a33c";
 
-  //Calculator interface layout
   return (
     <div className="App">
       <div className="calc-wrapper">
@@ -60,7 +59,6 @@ const App = () => {
           <Button symbol="-" color={buttonColor} handleClick={addToText}/>
         </div>
 
-        //Clears input box 
         <Button symbol="Clear" color="red" handleClick={resetInput}/>   
       </div>
     </div>
